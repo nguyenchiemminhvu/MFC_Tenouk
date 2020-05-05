@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFC_Tenouk - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSP36AD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MFC_Tenouk.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Projects\MFC_Tenouk\MainDoc.cpp"
+"E:\Projects\MFC_Tenouk\MainFrm.cpp"
+"E:\Projects\MFC_Tenouk\MainView.cpp"
+"E:\Projects\MFC_Tenouk\MFC_Tenouk.cpp"
+]
+Creating command line "cl.exe @C:\Users\Admin\AppData\Local\Temp\RSP36AD.tmp" 
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSP36AE.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MFC_Tenouk.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Projects\MFC_Tenouk\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Admin\AppData\Local\Temp\RSP36AE.tmp" 
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+MainDoc.cpp
+MainFrm.cpp
+MainView.cpp
+MFC_Tenouk.cpp
+Generating Code...
+Creating temporary file "C:\Users\Admin\AppData\Local\Temp\RSP38B2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MFC_Tenouk.pdb" /debug /machine:I386 /out:"Debug/MFC_Tenouk.exe" /pdbtype:sept 
+.\Debug\MainDoc.obj
+.\Debug\MainFrm.obj
+.\Debug\MainView.obj
+.\Debug\MFC_Tenouk.obj
+.\Debug\StdAfx.obj
+.\Debug\MFC_Tenouk.res
+]
+Creating command line "link.exe @C:\Users\Admin\AppData\Local\Temp\RSP38B2.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MFC_Tenouk.bsc"  .\Debug\StdAfx.sbr .\Debug\MainDoc.sbr .\Debug\MainFrm.sbr .\Debug\MainView.sbr .\Debug\MFC_Tenouk.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MFC_Tenouk.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
