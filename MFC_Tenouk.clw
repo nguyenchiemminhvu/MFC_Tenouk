@@ -2,22 +2,22 @@
 
 [General Info]
 Version=1
-LastClass=CAboutDlg
+LastClass=MainView
 LastTemplate=CDialog
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "MFC_Tenouk.h"
 LastPage=0
 
-ClassCount=9
+ClassCount=5
 Class1=MainApp
 Class2=MainDoc
 Class3=MainView
 Class4=MainFrame
-Class9=CAboutDlg
 
 ResourceCount=2
 Resource1=IDR_MAINFRAME
 Resource2=IDD_ABOUTBOX
+Class5=CAboutDlg
 
 [CLS:MainApp]
 Type=0
@@ -36,6 +36,9 @@ Type=0
 HeaderFile=MainView.h
 ImplementationFile=MainView.cpp
 Filter=C
+BaseClass=CView
+VirtualFilter=VWC
+LastObject=MainView
 
 
 [CLS:MainFrame]
