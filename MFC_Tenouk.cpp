@@ -14,6 +14,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
+clock_t _startTime;
+
 /////////////////////////////////////////////////////////////////////////////
 // MainApp
 
@@ -35,6 +37,7 @@ MainApp::MainApp()
 {
 	// TODO: add construction code here,
 	// Place all significant initialization in InitInstance
+	_startTime = clock();
 }
 
 /////////////////////////////////////////////////////////////////////////////

@@ -1,3 +1,5 @@
 /*.ncb
 /Debug
 /*.aps
+/DLLs/CustomDialogs/*.ncb
+/DLLs/CustomDialogs/Debug

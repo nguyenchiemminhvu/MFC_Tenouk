@@ -13,6 +13,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
+typedef void (CALLBACK * TIMELIMITDIALOG)(void);
+
 /////////////////////////////////////////////////////////////////////////////
 // MainView
 
@@ -89,8 +91,19 @@ void MainView::OnLButtonDown(UINT nFlags, CPoint point)
 	
 	CView::OnLButtonDown(nFlags, point);
 
-	_start.x = point.x;
-	_start.y = point.y;
+	extern clock_t _startTime;
+	clock_t _deltaTime = clock() - _startTime;
+	if ((float)_deltaTime / CLOCKS_PER_SEC > 3)
+	{
+		HINSTANCE hLib = LoadLibrary("CustomDialogs.dll");
+		TIMELIMITDIALOG f = (TIMELIMITDIALOG)GetProcAddress(hLib, "ShowTimeLimitDialog");
+		f();
+	}
+	else
+	{
+		_start.x = point.x;
+		_start.y = point.y;
+	}
 }
 
 void MainView::OnLButtonUp(UINT nFlags, CPoint point) 
